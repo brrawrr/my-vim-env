@@ -50,6 +50,7 @@ if exists(':Bundle')
     Bundle 'SirVer/ultisnips.git'
     Bundle 'jiangmiao/auto-pairs'
     Bundle 'tpope/vim-unimpaired.git'
+    Bundle 'Yggdroot/indentLine'
 end
 
 filetype plugin indent on
@@ -525,4 +526,6 @@ highlight ColorColumn ctermbg=236 guibg=#2c2d27
 
 " Add ; to the end of the current line
 nnoremap <leader>; m`A;<Esc>``
+
+let g:indentLine_char = '┆'
 
