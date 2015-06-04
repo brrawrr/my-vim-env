@@ -529,3 +529,7 @@ nnoremap <leader>; m`A;<Esc>``
 
 let g:indentLine_char = '┆'
 
+autocmd QuickFixCmdPost *grep* cwindow
+
+nmap <leader>G :Ggrep <cword><CR>"
+
