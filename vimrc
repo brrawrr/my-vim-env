@@ -51,6 +51,7 @@ if exists(':Bundle')
     Bundle 'jiangmiao/auto-pairs'
     Bundle 'tpope/vim-unimpaired.git'
     Bundle 'Yggdroot/indentLine'
+    Bundle 'scrooloose/nerdcommenter'
 end
 
 filetype plugin indent on
