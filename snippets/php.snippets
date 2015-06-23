@@ -1,7 +1,7 @@
 snippet php
 	<?php
+	
 	${1}
-	?>
 snippet ec
 	echo "${1:string}"${2};
 snippet inc
@@ -136,9 +136,11 @@ snippet class
 	/**
 	 * ${1}
 	 */
-	class ${2:ClassName} {
+	class ${2:ClassName}
+	{
 		${3}
-		function ${4:__construct}(${5:argument}) {
+		public function ${4:__construct}(${5:argument})
+		{
 			${6:// code...}
 		}
 	}
@@ -202,7 +204,8 @@ snippet foreach
 		${3:// code...}
 	}
 snippet fun
-	${1:public }function ${2:FunctionName}(${3}) {
+	${1:public }function ${2:FunctionName}(${3})
+	{
 		${4:// code...}
 	}
 # $... = array (...)
@@ -217,14 +220,15 @@ snippet tdd
 	 * @subpackage Tests
 	 * @author Jon Cairns <jon@22blue.co.uk>
 	 */
-	class ${1:className}TestCase extends TddTestCase {
-		
+	class ${1:className}TestCase extends TddTestCase
+	{
 		/**
 		 * Set up environment for test.
 		 *
 		 * @return void
 		 */
-		public function setUp() {
+		public function setUp()
+		{
 			parent::setUp();
 			${3:// code...}
 		}
@@ -239,7 +243,8 @@ snippet tddc
 	 * @subpackage Tests
 	 * @author Jon Cairns <jon@22blue.co.uk>
 	 */
-	class ${1:controller}ControllerTestCase extends TddControllerTestCase {
+	class ${1:controller}ControllerTestCase extends TddControllerTestCase
+	{
 		/**
 		 * $1 controller mock object.
 		 * @var $1
@@ -251,7 +256,8 @@ snippet tddc
 		 *
 		 * @return void
 		 */
-		public function setUp() {
+		public function setUp()
+		{
 			parent::setUp();
 			$this->$1 = $this->generate('$1',array(
 				${3:'components'=>array()}
@@ -262,6 +268,7 @@ snippet tddc
 	}
 # Test method
 snippet tfun
-	public function test${1:FunctionName}() {
+	public function test${1:FunctionName}()
+	{
 		${2:// code...}
 	}
