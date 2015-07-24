@@ -57,8 +57,8 @@ end
 filetype plugin indent on
 syntax enable
 
-set background=dark
 colorscheme seoul256-light
+set background=dark
 "colorscheme gruvbox
 
 runtime macros/matchit.vim
